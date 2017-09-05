@@ -9,5 +9,6 @@ def worker():
 
 pool = Pool(3)
 
+# 非阻塞方式
 for i  in range(10):
-    pool.apply_async(worker)
+    pool.apply_async(worker, )
